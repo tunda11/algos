@@ -14,6 +14,15 @@ using namespace std;
 */
 int linearSearch(auto data, auto key);//prototype
 
+int linearSearch(auto data, auto key){
+	for (auto i = 0u; i < data.size(); i++) {
+		if (key == data[i]) {
+		return i;
+		}
+		
+	}
+	return -1;
+}
 
 int main()
 {
@@ -64,6 +73,6 @@ int main()
     }
 
    cout<<endl<<"Program \"search it\" is now finished."<<endl<<endl;
-
+	linearSearch(inputs, search_key);
     return 0;
 }
